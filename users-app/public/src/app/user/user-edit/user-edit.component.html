@@ -1,0 +1,17 @@
+<p>Editar usuario</p>
+
+<form (submit)="update()">
+    <div class="form-group">
+      <input class="form-control" type="text" name="first_name" [(ngModel)]="editUser.first_name">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" name="last_name" [(ngModel)]="editUser.last_name">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" name="email" [(ngModel)]="editUser.email">
+    </div>
+           
+    <button class="success" type="submit">
+      Actualizar
+    </button>
+   </form>
